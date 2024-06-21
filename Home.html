@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Treat Home</title>
+    <link rel="stylesheet" href="./styleHome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="">
+    <!-- header for navigation and brand nam -->
+    <header class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- brand name -->
+        <a href="#" id="title" class="d-flex justify-content-start navbar-brand p-3">Tasty Treat</a>
+        <i><img src="./media/burger-menu.svg" alt="Icon" width="35px" class="d-md-none"></i>
+        <!-- navigation -->
+        <ul id="nav" class="nav d-none d-md-flex" >
+            <li class="nav-item"><a class="nav-link" >Home</a></li>
+            <li class="nav-item"><a class="nav-link">Menus</a></li>
+            <li class="nav-item"><a class="nav-link">Orders</a></li>
+            <li class="nav-item"><a class="nav-link">About Us</a></li>
+            <li class="nav-item"><a class="nav-link">Contact</a></li>    
+        </ul>
+    </header>
+    <!-- this is the main page
+      hero section below -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center" >
+        <div  id="caption"><p class="fs-md-1 h5" ><span class="badge bg-secondary" style="font-size: 3.5vw;">Your Home of Delicious Meals</span></p></div>
+        <button type="button" class="btn btn-danger btn-sm"><span style="font-size: 3vw;">Place your order NOW</span></button>
+    </section>
+
+    <!-- Menu Section w grid layout w 3 menu items image, title, description, and price -->
+    
+    <section id="menu" class="container d-grid">
+        <H3 class="title d-flex justify-content-center m-3" >MENU</H3>
+        <div class="row">
+            <div class="card col-md-4 p-2" >
+                <img src="./media/recipe-1.webp" alt="" class="card-img-top p-3">
+                <div class="card-body">
+                    <p class="card-title">Jollof Rice & Chicken & Beef</p>
+                    <p class="card-text">Premium Tasty Nigerian jollof rice with choice protein of beef, chicken, croacker fish etc. will go well with some salad and fried plantain side dish.. fror ultimate enjoyment choice soft drink or juice to wash it down</p>
+                    <p>price: $100</p>
+                    <a href="" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="card col-md-4 p-2" >
+                <img src="./media/recipe-1.webp" alt="" class="card-img-top p-3">
+                <div class="card-body">
+                    <p class="card-title">Jollof Rice & Chicken & Beef</p>
+                    <p class="card-text">Premium Tasty Nigerian jollof rice with choice protein of beef, chicken, croacker fish etc. will go well with some salad and fried plantain side dish.. fror ultimate enjoyment choice soft drink or juice to wash it down</p>
+                    <p>price: $100</p>
+                    <a href="" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="card col-md-4 p-2" >
+                <img src="./media/recipe-1.webp" alt="" class="card-img-top p-3">
+                <div class="card-body">
+                    <p class="card-title">Jollof Rice & Chicken & Beef</p>
+                    <p class="card-text">Premium Tasty Nigerian jollof rice with choice protein of beef, chicken, croacker fish etc. will go well with some salad and fried plantain side dish.. fror ultimate enjoyment choice soft drink or juice to wash it down</p>
+                    <p>price: $100</p>
+                    <a href="" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Us Section W grid system, two-column layout. image one side and about the restaurant on the other. -->
+            
+    <section id="abt" class="">
+        <div class=""><H3 class="title d-flex justify-content-center m-2 pt-3" >ABOUT US</H3></div>
+        <div class="row">
+            <div class="col-md-7 col-xl-6 text-center d-flex justify-content-center align-items-center"  >
+                <img src="./media/restaurant.webp" alt="" class="img-fluid p-3 rounded mx-auto d-block" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-5 col-xl-6 p-5" >
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eligendi accusamus et, non dolore hic fuga harum perferendis consequatur blanditiis commodi esse quibusdam vitae! Tempore quod accusamus vero vitae earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eligendi accusamus et, non dolore hic fuga harum perferendis consequatur blanditiis commodi esse quibusdam vitae! Tempore quod accusamus vero vitae earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eligendi accusamus et, non dolore hic fuga harum perferendis consequatur blanditiis commodi esse quibusdam vitae! Tempore quod accusamus vero vitae earum.
+                </p>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <!-- contact section: form -fields for name, email, message, and a submit button. -->
+
+    <section class="p-5">
+        <div class=""><H3 class="title d-flex justify-content-center m-2 pt-3" >CONTACT</H3></div>
+        <form action="">
+            <div class="form-group p-2">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter full name">
+                
+            </div>
+            <div class="form-group p-2">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                       
+            </div>
+            <div class="form-group p-2">
+                <label for="Message">Message</label>
+                <textarea class="form-control" id="Message" rows="5" placeholder="Type your message here"></textarea>
+                
+            </div>
+            
+            <button type="submit" class="btn btn-primary">   Send Message  </button>
+
+        </form>
+    </section>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<!-- simple footer with copyright information and social media icons. -->
+
+<footer class="">
+    <div class=" d-flex align-items-center justify-content-center" height="5px" width="5px">
+        
+        <img src="./media/Fb.svg" alt="fb" class=" " height="50px" width="50px">
+        
+        <img src="./media/inst.svg" alt="in"  class="p-1 img-fluid" height="50px" width="50px">
+       
+        <img src="./media/x.png" alt="x"  class=" m-3" height="50px" width="50px">
+
+
+    </div>
+    <p class="p-3">copyright @.....tasty treat inc</p>
+</footer>   
+</html> 
